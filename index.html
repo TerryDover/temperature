@@ -16,29 +16,20 @@
   </head>
 
   <body>
+    <h2>Temperature Converter</h2>
+    <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+
     <p>
       <label>Fahrenheit</label>
       <input
         id="inputFahrenheit"
         type="number"
         placeholder="Fahrenheit"
-        oninput="temperatureConverter(valNum.value)"
-        onchange="temperatureConverter(outputCelsius.value)"
+        oninput="temperatureConverter(this.value)"
+        onchange="temperatureConverter(this.value)"
       />
     </p>
-    <p>Celsius: <span id="outputCelsius"></span></p>
-
-    <p>
-      <label>Celsius</label>
-      <input
-        id="inputCelsius"
-        type="number"
-        placeholder="Celsius"
-        oninput="cToFtemperature(this.value)"
-        onchange="cToFtemperature(this.value)"
-      />
-    </p>
-    <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+    <p>Celcius: <span id="outputCelcius"></span></p>
     <!-- load main.js -->
     <script src="js/main.js"></script>
   </body>
