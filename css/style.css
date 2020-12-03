@@ -1,1 +1,4 @@
-/* CSS GOES HERE */
+.row{
+    align-items-center;
+justify-content-md-center;
+}
