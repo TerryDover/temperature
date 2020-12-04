@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -15,50 +17,57 @@
     <!-- custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <div class="container-fluid  bg-secondary">
-   <div class="row justify-content-around bg-secondary mt-5 pt-5">
   <body>
-    <div class="col-md-6 offset-md-3">
-    <div>
-      <h2>Temperature Converter</h2>
+    <div class="container-fluid bg-secondary">
+      <div class="row justify-content-around bg-secondary mt-5 pt-5">
+        <div class="col-md-6 offset-md-3">
+          <div>
+            <h2>Temperature Converter</h2>
+          </div>
+          <div>
+            <p></p>
+            <p class="sent">
+              Type a value in the Fahrenheit field to convert the value to
+              Celcius:
+            </p>
+            <label class="label">Fahrenheit</label>
+
+            <input
+              id="inputFahrenheit"
+              type="text"
+              placeholder="Fahrenheit"
+              oninput="temperatureConverter(this.value)"
+              onchange="temperatureConverter(this.value)"
+            />
+
+            <p class="output">
+              Celcius: <span class="outputField" id="outputCelcius"></span>
+            </p>
+          </div>
+          <!-- changed fields to make it convert C to F -->
+          <div>
+            <p class="sent">
+              Type a value in the Celcius field to convert the value to
+              Fahrenheit:
+            </p>
+            <p>
+              <label class="label">Celcius</label>
+              <input
+                id="inputCelcius"
+                type="text"
+                placeholder="Celcius"
+                oninput="temperatureConverter1(this.value)"
+                onchange="temperatureConverter1(this.value)"
+              />
+            </p>
+            <p class="outPut">
+              Fahrenheit:
+              <span class="outputField" id="outputFahrenheit"></span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-      <p>
-        <p class=sent>
-          Type a value in the Fahrenheit field to convert the value to Celcius:
-        </p>
-        <label class="label">Fahrenheit</label>
-        
-        <input
-          id="inputFahrenheit"
-          type="text"
-          placeholder="Fahrenheit"
-          oninput="temperatureConverter(this.value)"
-          onchange="temperatureConverter(this.value)"
-        />
-      </p>
-   <p class="output">Celcius: <span class=outputField id="outputCelcius"></span> </p> 
-    </div>
-      <!-- changed fields to make it convert C to F -->
-     <div>
-      <p class=sent>
-        Type a value in the Celcius field to convert the value to Fahrenheit:
-      </p>
-      <p>
-        <label class="label">Celcius</label>
-        <input
-          id="inputCelcius"
-          type="text"
-          placeholder="Celcius"
-          oninput="temperatureConverter1(this.value)"
-          onchange="temperatureConverter1(this.value)"
-        />
-      </p>
-      <p class="output">Fahrenheit: <span class=outputField id="outputFahrenheit"></span></p>
-    </div>
-    </div>
-  </div>
-  </div>
     <!-- load main.js -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
