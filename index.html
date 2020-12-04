@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!--set up div for the application and background color -->
     <div class="container-fluid bg-secondary">
       <div class="row justify-content-around bg-secondary mt-5 pt-5">
         <div class="col-md-6 offset-md-3">
@@ -31,7 +32,7 @@
               Celcius:
             </p>
             <label class="label">Fahrenheit</label>
-
+            <!-- input temp in F for converstion -->
             <input
               id="inputFahrenheit"
               type="text"
@@ -39,7 +40,7 @@
               oninput="temperatureConverter(this.value)"
               onchange="temperatureConverter(this.value)"
             />
-
+            <!-- sets output to celcius      -->
             <p class="output">
               Celcius: <span class="outputField" id="outputCelcius"></span>
             </p>
