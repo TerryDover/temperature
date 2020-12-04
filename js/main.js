@@ -1,3 +1,4 @@
+// converts temp F to C
 function temperatureConverter(valNum) {
   document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
 }
