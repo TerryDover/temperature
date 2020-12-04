@@ -2,3 +2,26 @@
     align-items-center;
 justify-content-md-center;
 }
+h2{
+    color: white;
+    padding-bottom: 20px;
+}
+.outputField{
+    font-size: larger;
+    color: #970505;
+    text-shadow: 0px 1px #4d4c4c;
+}
+.label {
+    font-size: larger;
+    color: goldenrod;
+}
+.output{
+    font-size: larger;
+    color: violet;
+    padding-bottom: -20;
+}
+.sent{
+    color: white;
+    font-size: larger;
+    padding-bottom: -10;
+}
